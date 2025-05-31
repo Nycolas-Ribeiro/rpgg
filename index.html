@@ -3,47 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Document</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <div>
-    <h1 class="ficha">Faça sua ficha!</h1>
 
-    <h2 class="nome">Nome:</h2><input type="text" placeholder="Digite seu nome...">
-    <h2 class="nome">Aparência:</h2><input type="text" placeholder="Digite sua Aparência...">
+    <h1>RPG</h1>
 
-    <h1 class="Atributos">Atributos</h1>
-    
-<h2 class="Atributo">Força:</h2>
-    <input type="Number" min="0" max="10" placeholder="Escolha um número de 1 a 10">
-<h2 class="Atributo">Destreza:</h2>
-    <input type="number" min="0" max="10" placeholder="Escolha um número de 1 a 10">
-<h2 class="Atributo">Constituição:</h2>
-    <input type="number" min="0" max="10" placeholder="Escolha um número de 1 a 10">
-<h2 class="Atributo">Inteligência:</h2>
-    <input type="number" min="0" max="10" placeholder="Escolha um número de 1 a 10">
-<h2 class="Atributo">Carisma:</h2>
-    <input type="number" min="0" max="10" placeholder="Escolha um número de 1 a 10">
+    <div id="ficha">
+        <h2>Monte a ficha do seu personagem</h2>
 
-    <h1 class="">Armas</h1>
-    <select class="Armas" name="" id="">
-    <option value="">Espada</option>
-    <option value="">Arco</option>
-    <option value="">Bastão(com uma mão)</option>
-    <option value="">Bastão(com duas mãos)</option>
-    </select>
+        Nome: <input id="nome" type="text"><br>
+        Foto: <input id="foto" type="text" placeholder="Cole o endereço da imagem"><br><br>
+
+        <b>Você tem 8 pontos para gastar nos atributos:</b><br>
+        Força: <input id="for" type="number" min="0" max="20" value="0"><br>
+        Destreza: <input id="des" id="des" type="number" min="0" max="20" value="0"><br>
+        Constituição: <input id="con" type="number" min="0" max="20" value="0"><br>
+        Inteligência: <input id="int" type="number" min="0" max="20" value="0"><br>
+        Carisma: <input id="car" type="number" min="0" max="20" value="0"><br><br>
+
+        Arma:
+        <select name="" id="arma">
+            <option value="Desarmado">Desarmado</option>
+            <option value="Espada">Espada</option>
+            <option value="Arco">Arco</option>
+            <option value="Bastão">Bastão</option>
+        </select>
+
+        <br><br><button onclick="enviarFicha()">Confirmar ficha</button>
     </div>
 
-    <hr>
-    <div class="Roll">
-    <h2 class="rolagem">Rolagem de Dados</h2>
-    <div class="Dadinhos">
-    <button class="dados">D20</button>
-    <button class="dados">D6</button>
-    <button class="dados">D10</button>
+    <div id="fichapronta">
+        <div class="perfil">
+            <img id="foto2" src="https://i0.wp.com/jogaod20.com/wp-content/uploads/2020/08/entendendo-as-mecanicas-de-barbaro.jpeg" alt="">
+            <div>
+                <h2 id="nome2">Nome do personagem</h2>
+                <p id="status">Vida: 10 | Armadura: 10</p>
+                <p id="arma2">Arma: Espada</p>
+            </div>
+        </div>
+        <hr>
+        <div id="atributos2">
+           <label id="força"> Força: 0 |</label>
+           <label id="destreza"> Destreza: 0 | </label>
+           <label id="constituição"> Constituição: 0 | </label>
+           <label id="inteligencia"> Inteligência: 0 | </label>
+           <label id="carisma"> Carisma: 0   </label>
+        </div>
     </div>
+
+    <div id="rolagens">
+        <hr>
+        <button onclick="dado(20)">Rolar Dado (D20)</button>
+        <button onclick="dado(6)">Rolar Dado(D6)</button>
+        <button onclick="ataque(forca)">Atacar com força</button>
+        <button onclick="ataque(des)">Atacar com destreza</button>
+        <button>Dano (Arma)</button>
     </div>
 </body>
 </html>
