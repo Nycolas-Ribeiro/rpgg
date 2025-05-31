@@ -1,84 +1,21 @@
-body{
-    background-color: rgb(102, 0, 128);
+#ficha{
+    border: 2px solid black;
+    padding: 10px;
 }
 
-div{
-    background-color: black;
-    border: 1px solid black;
+#fichapronta{
+    display: none;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#fichapronta img{
+    height: 130px;
+    width: 130px;
+    border: 2px solid black;
+}
+
+.perfil{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: gold;
-    border-radius: 20px;
-}
-
-.ficha{
-    color: yellow;
-    display: flex;
-    justify-content: center;
-}
-
-.nome{
-    margin-left: 10px; 
-}
-
-input{
-    width: 400px;
-    height: 30px;
-    border-radius: 10px;
-    margin-left: 10px;
-    background-color: rgb(10, 9, 1);
-    color: gold;
-    font-size: 20px;
-}
-
-.Armas{
-    background-color: rgb(10, 9, 1);
-    width: 400px;
-    height: 30px;
-    border-radius: 10px;
-    margin-left: 10px;
-    color: gold;
-    font-size: 20px;
-}
-
-.Atributo{
-    margin-left: 10px;
-}
-
-.Atributos{
-    margin-left: 10px;
-}
-
-hr{
-
-}
-
-.Roll{
-    background-color: black;
-    border: 1px solid black;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: gold;
-    border-radius: 20px;  
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-}
-.rolagem{
-    display: flex;
-
-}
-
-.dados{
-    display: flex;
-    height: 20px;
-    width: 400px;
- justify-content: center;
-}
-
-.Dadinhos{
-    display: flex;
-    
+    gap: 20px;
 }
