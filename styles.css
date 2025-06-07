@@ -1,6 +1,57 @@
+body{
+background-image: url("https://i.pinimg.com/originals/b4/d3/2b/b4d32bd49fb8fb2d9c847221292f8ea6.gif");
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 0;
+height: 100vh;
+background-size: cover;
+}
+
+.titulo{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+}
+
 #ficha{
-    border: 2px solid black;
+    border: 1px solid white;
     padding: 10px;
+    width: 600px;
+    height: 700px;
+    border-radius: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+   background-color: rgba(255, 255, 255, 0);
+    display: flex;
+    text-align: center;
+    padding: 10px;
+    flex-direction: column;
+    font-size: 20px;
+
+    > div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+#arma{
+    height: 35px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+input, select{
+    font-family: 'Courier New', Courier, monospace;
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 5px;
 }
 
 #fichapronta{
@@ -18,4 +69,24 @@
 .perfil{
     display: flex;
     gap: 20px;
+}
+
+button{
+background-color:black ;
+color: white;
+width: 300px;
+border-radius: 100px;
+font-family: 'Courier New', Courier, monospace;
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 10px;
+padding: 15px 0;
+}
+
+#rolagens{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
