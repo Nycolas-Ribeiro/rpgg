@@ -4,36 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="aula.css">
     <script src="script.js"></script>
 </head>
 <body>
 
-    <h1>RPG</h1>
+    <h1 class="titulo">RPG</h1>
 
     <div id="ficha">
         <h2>Monte a ficha do seu personagem</h2>
 
-        Nome: <input id="nome" type="text"><br>
+        <div>
+        Nome: <input id="nome" type="text" placeholder="Digite o nome do seu personagem"><br>
+        </div>
+        <div>
         Foto: <input id="foto" type="text" placeholder="Cole o endereço da imagem"><br><br>
+            </div>
 
         <b>Você tem 8 pontos para gastar nos atributos:</b><br>
+        <div>
         Força: <input id="for" type="number" min="0" max="20" value="0"><br>
+            </div>
+            <div>
         Destreza: <input id="des" id="des" type="number" min="0" max="20" value="0"><br>
+            </div>
+            <div>
         Constituição: <input id="con" type="number" min="0" max="20" value="0"><br>
+            </div>
+            <div>
         Inteligência: <input id="int" type="number" min="0" max="20" value="0"><br>
+            </div>
+            <div>
         Carisma: <input id="car" type="number" min="0" max="20" value="0"><br><br>
-
+            </div>
+            <div>
         Arma:
         <select name="" id="arma">
-            <option value="Desarmado">Desarmado</option>
-            <option value="Espada">Espada</option>
-            <option value="Arco">Arco</option>
-            <option value="Bastão">Bastão</option>
+            <option value="Desarmado">Desarmado🖐️</option>
+            <option value="Espada">Espada⚔️</option>
+            <option value="Arco">Arco🏹</option>
+            <option value="Bastão">Bastão🏏</option>
         </select>
-
-        <br><br><button onclick="enviarFicha()">Confirmar ficha</button>
+        </div>
+            <div>
+        <br><button onclick="enviarFicha()">Confirmar ficha</button>
     </div>
+</div>
 
     <div id="fichapronta">
         <div class="perfil">
@@ -56,9 +72,9 @@
 
     <div id="rolagens">
         <hr>
-        <button onclick="dado(20)">Rolar Dado (D20)</button>
-        <button onclick="dado(6)">Rolar Dado(D6)</button>
-        <button onclick="ataque(forca)">Atacar com força</button>
+        <button  onclick="dado(20)">Rolar Dado (D20)</button>
+        <button  onclick="dado(6)">Rolar Dado(D6)</button>
+        <button  onclick="ataque(forca)">Atacar com força</button>
         <button onclick="ataque(des)">Atacar com destreza</button>
         <button>Dano (Arma)</button>
     </div>
